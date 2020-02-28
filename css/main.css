@@ -106,11 +106,14 @@ footer {
   flex-flow: row wrap;
 }
 /* Base Header styles */
+
+
 header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding: 15px 0;
   
 }
 
@@ -119,34 +122,67 @@ header nav {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 60%;
   
 }
 
 header nav ul {
   display: flex;
   justify-content: space-around;
+  width: 45%;
 }
+
+.header-divider {
+  width: 100%;
+}
+
+
 
 /* Base Footer styles */
 
+
 footer .content-wrapper {
   display: flex;
-}
-
-footer .contact {
-  display: flex;
+  justify-content: center;
+  width: 55%;
 }
 
 footer .social {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
 }
+
+.footer-contact h4 {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+
+footer .social h4 {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 25px;
+  width: 100%;
+}
+
 
 footer .social p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.copyright {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.copyright p {
+  padding-top: 50px;
+  padding-bottom: 10px;
 }
 
 /*------------------ Mobile Styles-------------------- */
@@ -159,13 +195,33 @@ footer .social p {
   flex-flow: row wrap;
 }
 
+.hero-area h1 {
+  padding-top: 55px;
+}
+
 /* Home Page-Aside section - signup form */
+
+.content-wrapper {
+  width: 90%;
+}
 
 aside {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
+}
+
+.form-description h3 {
+  padding-top: 30px;
+}
+
+.form-description p {
+  padding-top: 15px;
+}
+
+.form input {
+  padding: 20px 0;
 }
 
 /* Home Page-Features section */
@@ -176,11 +232,23 @@ aside {
   flex-flow: row wrap;
 }
 
-.features .features-items {
+.features h1 {
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+.features-items {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  text-align: center;
+  width: 55%;
+}
+
+.fontawesome-icon {
+  padding-top: 60px;
+  padding-bottom: 40px;
 }
 
 /* Home Page-Reviews section */
@@ -191,6 +259,19 @@ aside {
   flex-flow: row wrap;
 }
 
+.reviews h2 {
+  padding-top: 55px;
+  padding-bottom: 35px;
+}
+
+.reviews h3 {
+  width: 90%;
+  padding: 25px 0;
+}
+
+.reviews p {
+  padding-bottom: 50px;
+}
 /* --------------------About page------------------- */
 
 .mission {
