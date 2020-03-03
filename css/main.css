@@ -97,6 +97,24 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+   
+   
+.content-wrapper {
+ width: 90%;
+}
+
+h1 {
+  font-size: 2.25em;
+}
+
+h2 {
+  font-size: 1.875em;
+}
+
+h3 {
+  font-size: 1.125em;
+}
+
 /* Base Header and Footer Styles */
 header,
 footer {
@@ -122,7 +140,7 @@ header nav {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  width: 60%;
+  width: 100%;
   
 }
 
@@ -130,6 +148,8 @@ header nav ul {
   display: flex;
   justify-content: space-around;
   width: 45%;
+  list-style: none;
+  padding: 0;
 }
 
 .header-divider {
@@ -143,8 +163,23 @@ header nav ul {
 
 footer .content-wrapper {
   display: flex;
+  flex-flow: row wrap;
   justify-content: center;
   width: 55%;
+}
+
+
+footer .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+footer .contact ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
 }
 
 footer .social {
@@ -154,13 +189,7 @@ footer .social {
   width: 100%;
 }
 
-.footer-contact h4 {
-  text-align: center;
-  padding-top: 50px;
-  padding-bottom: 25px;
-}
-
-footer .social h4 {
+footer h3 {
   text-align: center;
   padding-top: 50px;
   padding-bottom: 25px;
@@ -201,9 +230,7 @@ footer .social p {
 
 /* Home Page-Aside section - signup form */
 
-.content-wrapper {
-  width: 90%;
-}
+
 
 aside {
   display: flex;
@@ -212,7 +239,7 @@ aside {
   flex-flow: row wrap;
 }
 
-.form-description h3 {
+aside h3 {
   padding-top: 30px;
 }
 
@@ -221,8 +248,10 @@ aside {
 }
 
 .form input {
+  width: 100%;
   padding: 20px 0;
 }
+
 
 /* Home Page-Features section */
 
@@ -232,7 +261,15 @@ aside {
   flex-flow: row wrap;
 }
 
+.features .content-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
 .features h1 {
+  width: 100%;
+  text-align: left;
   padding-top: 50px;
   padding-bottom: 10px;
 }
@@ -256,7 +293,13 @@ aside {
 .reviews {
   display: flex;
   justify-content: center;
+}
+
+.reviews .content-wrapper {
+  display: flex;
+  justify-content: center;
   flex-flow: row wrap;
+  width: 90%;
 }
 
 .reviews h2 {
@@ -286,6 +329,15 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.contact-section h1 {
+  width: 100%;
+}
+
+.contact-content ul {
+  list-style: none;
+  padding: 0;
 }
 
 /* ---------------------------FAQ page----------------- */
@@ -393,17 +445,226 @@ aside {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+   
+/* -----------------Tablet styles ------------------*/
+@media only screen and (min-width: 768px) {
+  
+  h1 {
+    font-size: 3em;
+  }
+  
+  h2 {
+    font-size: 2.25em;
+  }
+  
+  h3 {
+    font-size: 1.5em;
+  }
+  
+/* header section */
+  
+  header .content-wrapper {
+    flex-flow: row nowrap;
+  }
+  
+  
+  .hero-area h1 {
+    display: flex;
+    width: 80%;
+  }
+  
+  header nav {
+    justify-content: flex-end;
+  }
+  
+  header nav ul {
+    width: 45%;
+    justify-content: space-between;
+  }
+  
+  /* Home Page-Aside section - signup form */
+  
+  aside .content-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+  }
+  
+  aside .form-description {
+    width: 50%;
+    justify-content: flex-start; 
+  }
+  
+  aside .form-description p, h3 {
+    width: 80%;
+  }
+  
+  aside .form {
+    display: flex;
+    width: 50%;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+  }
+  
+  aside .form h3 {
+    width: 90%;
+    text-align: left;
+  
+  }
+  
+  aside .form input {
+    width: 90%;
+  }
+  
+  /* Home Page-Features section */
+  
+  .features .features-items {
+    width: 50%;
+  }
+  
+  .features .features-items p {
+    width: 60%;
+  }
+  
+  /* Home Page-Reviews section */
+  
+  .reviews .content-wrapper {
+    justify-content: flex-start;
+  }
+  
+  .reviews article {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+  
+  .reviews .retreat-image {
+    width: 50%;
+  }
+  
+  .reviews h2 {
+    width: 75%;
+  }
+  
+  .reviews .retreat-article {
+    width: 50%;
+  }
+  
+  /* footer section */
+  
+  footer .content-wrapper {
+    width: 90%;
+    flex-flow: row wrap;
+  }
+  
+  footer .contact {
+    width: 50%; 
+  }
+  
+  footer .social {
+    width: 50%;
+  }
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+
+/* ---------------------------FAQ page----------------- */
+
+  .faq h1 {
+    width: 100%;
+  }
+
+  .faq .content-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .faq .faq-content {
+
+    flex-basis: 45%;
+  }
+
+  .faq .faq-content p, h4 {
+    width: 100%;
+  }
+
+
+/* ---------------------------About page----------------- */
+
+  .mission {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+  }
+  
+  .mission h2 {
+    width: 75%;
+  }
+
+  .mission-content {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .mission-content p {
+    width: 45%;
+  }
+  
+  .contact-section .content-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  
+  .contact-section h2 {
+    width: 75%;
+  }
+  
+  .contact-content {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    flex-basis: 45%;
+  }
+  
+  .contact-content h3 {
+    display: flex;
+    width: 100%;
+  }
+  
+  
+}
+/* Desktop styles */
+
+@media only screen and (min-width:1200px) {
+  
+  h1 {
+    font-size: 3.75em;
+  }
+  .content-wrapper {
+    width: 80%;
+  }
+  
+  aside .form {
+    width: 65%;
+  }
+  
+  
+  .features h1 {
+    width: 100%;
+  }
+  
+  .features .features-items {
+    width: 33%;
+
+  }
+
+  
+  
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
+
 
 /* ==========================================================================
    Print styles.
