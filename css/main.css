@@ -103,6 +103,10 @@ textarea {
  width: 90%;
 }
 
+/* h1, h2, h3 {
+  font-family: "Poppins" sans-serif;
+} */
+
 h1 {
   font-size: 2.25em;
 }
@@ -112,6 +116,14 @@ h2 {
 }
 
 h3 {
+  font-size: 1.125em;
+}
+
+p {
+  font-size: 1.125em;
+}
+
+ul {
   font-size: 1.125em;
 }
 
@@ -210,6 +222,8 @@ footer .social p {
 }
 
 .copyright p {
+  width: 100%;
+  text-align: center;
   padding-top: 50px;
   padding-bottom: 10px;
 }
@@ -491,8 +505,10 @@ aside h3 {
   }
   
   aside .form-description {
+    display: flex;
     width: 50%;
-    justify-content: flex-start; 
+    justify-content: flex-start;
+    flex-flow: row wrap;
   }
   
   aside .form-description p, h3 {
@@ -638,26 +654,56 @@ aside h3 {
 /* Desktop styles */
 
 @media only screen and (min-width:1200px) {
-  
+  /*-------------------------Base Styles-------------------*/
   h1 {
     font-size: 3.75em;
   }
   .content-wrapper {
+    max-width: 960px;
+    width: 80%;
+  }
+  /* --------------------Home Page--------------------------- */
+  aside .form-description h2, p {
     width: 80%;
   }
   
-  aside .form {
-    width: 65%;
+  aside .form-description p {
+    font-size: 1.125em;
   }
   
+  aside .form {
+    width: 50%;
+  }
   
-  .features h1 {
-    width: 100%;
+  aside .form input {
+    width: 80%;
+  }
+  
+  aside .form h2 {
+    width: 80%;
+    text-align: left;
+  }
+  
+  .features .content-wrapper {
+    justify-content: flex-start;
+  }
+  
+  .features h2 {
+    display: flex;
+    width: 90%;
+    justify-content: flex-start;
+    text-align: left;
   }
   
   .features .features-items {
     width: 33%;
 
+  }
+  
+  /* -------------------------FAQ Page----------------------------- */
+  
+  .faq h2 {
+    width: 100%;
   }
 
   
