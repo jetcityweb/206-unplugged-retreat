@@ -111,12 +111,15 @@ html {
 
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1em;
+  font-weight: normal;
+  font-size: 0.875em;
+  background-color: #202322;
 }
 
 ul {
   font-size: 1.125em;
   list-style: none;
+  padding: 0;
 }
 
 a {
@@ -127,16 +130,22 @@ a {
 
 
 h1 {
+  font-family: 'Poppins', sans-serif;
   font-size: 2.25em;
+  font-weight: 500;
 }
 
 h2 {
   font-size: 1.875em;
   font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+  line-height: 1.3em;
+  text-align: left;
 }
 
 h3 {
-  font-size: 1.125em;
+  font-size: 1.25em;
+  font-weight: 500;
 }
 
 h3,h4 {
@@ -144,7 +153,7 @@ h3,h4 {
 }
 
 p {
-  font-size: 1.125em;
+  font-size: 1em;
 }
 
 img {
@@ -272,10 +281,8 @@ address {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-}
-
-.hero-area h1 {
   padding-top: 55px;
+  margin-bottom: 330px;
 }
 
 /* Home Page-Aside section - signup form */
@@ -283,18 +290,23 @@ address {
 
 
 aside {
+  background-color: #527158;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
 }
 
-aside h3 {
+aside h2 {
+  display: flex;
+  width: 90%;
   padding-top: 30px;
+  margin-bottom: 10px;
 }
 
 .form-description p {
   padding-top: 15px;
+  margin-bottom: 70px;
 }
 
 .form input {
@@ -317,7 +329,7 @@ aside h3 {
   flex-flow: row wrap;
 }
 
-.features h1 {
+.features h2 {
   width: 100%;
   text-align: left;
   padding-top: 50px;
@@ -331,6 +343,7 @@ aside h3 {
   flex-flow: row wrap;
   text-align: center;
   width: 55%;
+  margin-bottom: 70px;
 }
 
 .fontawesome-icon {
@@ -341,6 +354,7 @@ aside h3 {
 /* Home Page-Reviews section */
 
 .reviews {
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
 }
@@ -368,35 +382,50 @@ aside h3 {
 /* --------------------About page------------------- */
 
 .mission {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .contact-section {
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .contact-section h1 {
   width: 100%;
 }
 
-.contact-content ul {
+.contact-section h3 {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.contact-section ul {
   /* list-style: none; */
   padding: 0;
+  margin-top: 5px;
 }
 
 /* ---------------------------FAQ page----------------- */
 
 .faq {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .faq-content-wrapper {
@@ -404,6 +433,37 @@ aside h3 {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+
+
+/* Homepage input form */
+
+/* aside .form {
+  margin-top: 30px;
+} */
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 0.5em 0;
+  margin-top: 20px;
+  margin-bottom: 70px;
+  background-color: #2a423a;
+  font-family: 'Poppins' sans-serif;
+  font-weight: 500;
+  font-size: 1.5em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 
@@ -574,6 +634,10 @@ aside h3 {
     width: 50%;
   }
   
+  .features h2 {
+    padding-top: 100px;
+  }
+  
   .features .features-items p {
     width: 60%;
   }
@@ -623,6 +687,11 @@ aside h3 {
   .faq h1 {
     width: 100%;
   }
+  
+  .faq {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 
   .faq .content-wrapper {
     display: flex;
@@ -635,7 +704,7 @@ aside h3 {
     flex-basis: 45%;
   }
 
-  .faq .faq-content p, h4 {
+  .faq .faq-content p, h3 {
     width: 100%;
   }
 
@@ -646,6 +715,8 @@ aside h3 {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
 
   }
   
@@ -663,6 +734,11 @@ aside h3 {
     width: 45%;
   }
   
+  .contact-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
+  }
   .contact-section .content-wrapper {
     display: flex;
     flex-flow: row wrap;
