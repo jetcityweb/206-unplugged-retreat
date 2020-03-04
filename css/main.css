@@ -99,13 +99,32 @@ textarea {
    ========================================================================== */
    
    
-.content-wrapper {
- width: 90%;
-}
+
 
 /* h1, h2, h3 {
   font-family: "Poppins" sans-serif;
 } */
+html {
+  font-size: 16px;
+  color: #e2e3ed;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+}
+
+ul {
+  font-size: 1.125em;
+  list-style: none;
+}
+
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+  
+}
+
 
 h1 {
   font-size: 2.25em;
@@ -113,18 +132,31 @@ h1 {
 
 h2 {
   font-size: 1.875em;
+  font-family: 'Poppins', sans-serif;
 }
 
 h3 {
   font-size: 1.125em;
 }
 
+h3,h4 {
+  font-family: 'Poppins', sans-serif;
+}
+
 p {
   font-size: 1.125em;
 }
 
-ul {
-  font-size: 1.125em;
+img {
+  
+}
+
+figure {
+  
+}
+
+.content-wrapper {
+ width: 90%;
 }
 
 /* Base Header and Footer Styles */
@@ -188,8 +220,8 @@ footer .contact {
   width: 100%;
 }
 
-footer .contact ul {
-  list-style: none;
+footer .contact  {
+  /* list-style: none; */
   text-align: center;
   padding: 0;
 }
@@ -213,6 +245,10 @@ footer .social p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+address {
+  font-style: normal;
 }
 
 .copyright {
@@ -350,7 +386,7 @@ aside h3 {
 }
 
 .contact-content ul {
-  list-style: none;
+  /* list-style: none; */
   padding: 0;
 }
 
