@@ -153,15 +153,18 @@ h3,h4 {
 }
 
 p {
-  font-size: 1em;
+  font-size: 1.1em;
 }
 
 img {
-  
+  width: 100%;
+  max-height: 240px;
 }
 
 figure {
-  
+  display: flex;
+  padding: 0;
+  margin: 0;
 }
 
 .content-wrapper {
@@ -188,6 +191,13 @@ header .content-wrapper {
   
 }
 
+header figure {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+}
+
+
 header nav { 
   display: flex;
   justify-content: center;
@@ -202,6 +212,7 @@ header nav ul {
   justify-content: space-around;
   width: 45%;
   list-style: none;
+  text-transform: uppercase;
   padding: 0;
 }
 
@@ -278,9 +289,17 @@ address {
 /* Home Page-Main section - Hero area */
 
 .hero-area {
+  background-image: url(../img/hero-image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+
+}
+
+.hero-area h1 {
   padding-top: 55px;
   margin-bottom: 330px;
 }
@@ -318,6 +337,10 @@ aside h2 {
 /* Home Page-Features section */
 
 .features {
+  background-image: url(../img/features.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -366,18 +389,33 @@ aside h2 {
   width: 90%;
 }
 
+.reviews article { 
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
 .reviews h2 {
-  padding-top: 55px;
-  padding-bottom: 35px;
+  margin: 55px 0 35px 0;
+  padding: 0;
 }
 
 .reviews h3 {
   width: 90%;
-  padding: 25px 0;
+  margin: 20px 0;
+  padding: 0;
 }
 
 .reviews p {
+  display: flex;
+  width: 100%;
   padding-bottom: 50px;
+}
+
+.retreat-image {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
 }
 /* --------------------About page------------------- */
 
@@ -583,6 +621,10 @@ input[type=button] {
     width: 80%;
   }
   
+  header figure {
+    width: 90%;
+  }
+  
   header nav {
     justify-content: flex-end;
   }
@@ -648,22 +690,43 @@ input[type=button] {
     justify-content: flex-start;
   }
   
+  article img {
+    margin: 5px 10px 10px 0;
+  }
+  
   .reviews article {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
   }
   
-  .reviews .retreat-image {
-    width: 50%;
-  }
   
   .reviews h2 {
     width: 75%;
   }
   
+  .reviews h3 {
+    margin: 0 10px;
+  }
+  
   .reviews .retreat-article {
     width: 50%;
+  }
+  
+  .reviews p {
+    width: 90%;
+    padding: 0;
+    margin: 10px 10px;
+  }
+  
+  .reviews .retreat-image {
+    display: flex;
+    width: 50%;
+  }
+  
+  .reviews img {
+    width: 100%;
+    max-height: 320px;
   }
   
   /* footer section */
