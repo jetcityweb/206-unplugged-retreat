@@ -8,6 +8,7 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+
 html {
   color: #222;
   font-size: 1em;
@@ -34,6 +35,7 @@ html {
 /*
  * A better looking default horizontal rule
  */
+
 hr {
   display: block;
   height: 1px;
@@ -47,6 +49,7 @@ hr {
  * images, videos and the bottom of their containers:
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
+
 audio,
 canvas,
 iframe,
@@ -58,6 +61,7 @@ video {
 /*
  * Remove default fieldset styles.
  */
+
 fieldset {
   border: 0;
   margin: 0;
@@ -66,12 +70,14 @@ fieldset {
 /*
  * Allow only vertical resizing of textareas.
  */
+
 textarea {
   resize: vertical;
 }
 /* ==========================================================================
    Browser Upgrade Prompt
    ========================================================================== */
+
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -84,6 +90,7 @@ textarea {
 /* h1, h2, h3 {
   font-family: "Poppins" sans-serif;
 } */
+
 html {
   font-size: 16px;
   color: #e2e3ed;
@@ -150,7 +157,6 @@ figure {
   width: 90%;
 }
 /* Base Header and Footer Styles */
-
 footer,
 header {
   display: flex;
@@ -159,6 +165,7 @@ header {
   flex-flow: row wrap;
 }
 /* Base Header styles */
+
 header .content-wrapper {
   display: flex;
   justify-content: center;
@@ -194,6 +201,7 @@ header nav ul {
   width: 100%;
 }
 /* Base Footer styles */
+
 footer .content-wrapper {
   display: flex;
   flex-flow: row wrap;
@@ -269,21 +277,23 @@ address {
 }
 /*------------------ Mobile Styles-------------------- */
 /* Home Page-Main section - Hero area */
+
 .hero-area {
   background-image: url("../img/hero-image.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  min-height: 500px;
 }
 
 .hero-area h1 {
-  padding-top: 55px;
-  margin-bottom: 330px;
+  margin-top: 55px;
+  padding: 0;
 }
 /* Home Page-Aside section - signup form */
+
 aside {
   background-color: #527158;
   display: flex;
@@ -309,6 +319,7 @@ aside h2 {
   padding: 20px 0;
 }
 /* Home Page-Features section */
+
 .features {
   background-image: url("../img/features.jpg");
   background-size: cover;
@@ -346,8 +357,8 @@ aside h2 {
   font-size: 3.75em;
   margin-bottom: 0;
 }
-
 /* Home Page-Reviews section */
+
 .reviews {
   background-color: #2a423a;
   display: flex;
@@ -390,6 +401,7 @@ aside h2 {
   width: 100%;
 }
 /* --------------------About page------------------- */
+
 .mission {
   background-color: #527158;
   display: flex;
@@ -400,8 +412,11 @@ aside h2 {
   padding-bottom: 50px;
 }
 
+.mission h2 {
+  margin-top: 0;
+  padding-top: 0;
+}
 /* ------------Embedded Google Map------------------- */
-
 .map figure {
   width: 100%;
   height: 0;
@@ -417,9 +432,7 @@ aside h2 {
   top: 0;
   left: 0;
 }
-
 /* Contact info */
-
 .contact-section {
   background-color: #2a423a;
   display: flex;
@@ -445,6 +458,7 @@ aside h2 {
   margin-top: 5px;
 }
 /* ---------------------------FAQ page----------------- */
+
 .faq {
   background-color: #527158;
   display: flex;
@@ -461,10 +475,7 @@ aside h2 {
   align-items: center;
   flex-flow: row wrap;
 }
-/* Homepage input form */
-/* aside .form {
-  margin-top: 30px;
-} */
+
 input[type=text] {
   box-sizing: border-box;
   width: 100%;
@@ -493,6 +504,7 @@ input[type=button] {
 /*
  * Hide visually and from screen readers
  */
+
 .hidden {
   display: none !important;
 }
@@ -504,6 +516,7 @@ input[type=button] {
 *    causes content to wrap 1 word per line:
 *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
 */
+
 .sr-only {
   border: 0;
   clip: rect(0, 0, 0, 0);
@@ -521,6 +534,7 @@ input[type=button] {
 * to be focusable when navigated to via the keyboard:
 * https://www.drupal.org/node/897638
 */
+
 .sr-only.focusable:active,
 .sr-only.focusable:focus {
   clip: auto;
@@ -534,6 +548,7 @@ input[type=button] {
 /*
 * Hide visually and from screen readers, but maintain layout
 */
+
 .invisible {
   visibility: hidden;
 }
@@ -548,6 +563,7 @@ input[type=button] {
 * 2. The use of `table` rather than `block` is only necessary if using
 *    `:before` to contain the top-margins of child elements.
 */
+
 .clearfix:after,
 .clearfix:before {
   content: " ";
@@ -700,219 +716,183 @@ input[type=button] {
   footer .social {
     width: 50%;
   }
-  
+
   footer .social-icons {
     width: 200px;
-  /* ---------------------------FAQ page----------------- */
-  .faq h1 {
-    width: 100%;
-  }
+    /* ---------------------------FAQ page----------------- */
+    .faq h1 {
+      width: 100%;
+    }
 
-  .faq {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
+    .faq {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
 
-  .faq .content-wrapper {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-  }
+    .faq .content-wrapper {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
 
-  .faq .faq-content {
-    flex-basis: 45%;
-  }
+    .faq .faq-content {
+      flex-basis: 45%;
+    }
 
-  .faq .faq-content p,
-  h3 {
-    width: 100%;
-  }
-  /* ---------------------------About page----------------- */
-  .mission {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
+    .faq .faq-content p,
+    h3 {
+      width: 100%;
+    }
+    /* ---------------------------About page----------------- */
+    .mission {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
 
-  .mission h2 {
-    width: 75%;
-  }
+    .mission h2 {
+      width: 75%;
+    }
 
-  .mission-content {
-    display: flex;
-    justify-content: space-between;
-  }
+    .mission-content {
+      display: flex;
+      justify-content: space-between;
+    }
 
-  .mission-content p {
-    width: 45%;
+    .mission-content p {
+      width: 45%;
+    }
+    /* Embedded Google map */
+    .map figure {
+      padding-bottom: 46%;
+    }
   }
-  /* Embedded Google map */
-  
+  /* Desktop styles */
+  @media only screen and (min-width:1200px) {
+    /*-------------------------Base Styles-------------------*/
+    h1 {
+      font-size: 3.75em;
+    }
+
+    .content-wrapper {
+      max-width: 960px;
+      width: 80%;
+    }
+    /* --------------------Home Page--------------------------- */
+    aside .form-description h2,
+    p {
+      width: 80%;
+    }
+
+    aside .form-description p {
+      font-size: 1.125em;
+    }
+
+    aside .form {
+      width: 50%;
+    }
+
+    aside .form input {
+      width: 80%;
+    }
+
+    aside .form h2 {
+      width: 80%;
+      text-align: left;
+    }
+
+    .features .content-wrapper {
+      justify-content: flex-start;
+    }
+
+    .features h2 {
+      display: flex;
+      width: 90%;
+      justify-content: flex-start;
+      text-align: left;
+    }
+
+    .features .features-items {
+      width: 33%;
+    }
+    /* Footer */
+    /* -------------------------FAQ Page----------------------------- */
+    .faq h2 {
+      width: 100%;
+    }
+  }
+  /* ---------------------------About Page--------------------------- */
   .map figure {
-    padding-bottom: 46%;
-  }
-  
-/* Contact section */
-
-  /* .contact-section {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  } */
-
-  /* .contact-section {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-  } */
-
-  /* .contact-section h2 {
-    width: 75%;
-  } */
-
-  /* .contact-content {
-    display: flex;
-    flex-flow: row wrap;
-    width: 100%;
-    flex-basis: 45%;
-  } */
-
-  /* .contact-content h3 {
-    display: flex;
-    width: 100%;
-  } */
-}
-/* Desktop styles */
-@media only screen and (min-width:1200px) {
-  /*-------------------------Base Styles-------------------*/
-  h1 {
-    font-size: 3.75em;
-  }
-
-  .content-wrapper {
-    max-width: 960px;
-    width: 80%;
-  }
-  /* --------------------Home Page--------------------------- */
-  aside .form-description h2,
-  p {
-    width: 80%;
-  }
-
-  aside .form-description p {
-    font-size: 1.125em;
-  }
-
-  aside .form {
-    width: 50%;
-  }
-
-  aside .form input {
-    width: 80%;
-  }
-
-  aside .form h2 {
-    width: 80%;
-    text-align: left;
-  }
-
-  .features .content-wrapper {
-    justify-content: flex-start;
-  }
-
-  .features h2 {
-    display: flex;
-    width: 90%;
-    justify-content: flex-start;
-    text-align: left;
-  }
-
-  .features .features-items {
-    width: 33%;
-  }
-  
-  /* Footer */
-  
-  /* -------------------------FAQ Page----------------------------- */
-  .faq h2 {
-    width: 100%;
-  }
-}
-
-/* ---------------------------About Page--------------------------- */
-
-.map figure {
-  padding-bottom: 38%;
-
-/* ==========================================================================
+    padding-bottom: 38%; /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
    https://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
-@media print {
-  *,
-  *:after,
-  *:before {
-    background: transparent !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
+    @media print {
+      *,
+      *:after,
+      *:before {
+        background: transparent !important;
+        color: #000 !important;
+        /* Black prints faster */
+        box-shadow: none !important;
+        text-shadow: none !important;
+      }
 
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
+      a,
+      a:visited {
+        text-decoration: underline;
+      }
 
-  a[href]:after {
-    content: " (" attr(href) ")";
-  }
+      a[href]:after {
+        content: " (" attr(href) ")";
+      }
 
-  abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
-  /*
+      abbr[title]:after {
+        content: " (" attr(title) ")";
+      }
+      /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-  a[href^="#"]:after,
-  a[href^="javascript:"]:after {
-    content: "";
-  }
+      a[href^="#"]:after,
+      a[href^="javascript:"]:after {
+        content: "";
+      }
 
-  pre {
-    white-space: pre-wrap !important;
-  }
+      pre {
+        white-space: pre-wrap !important;
+      }
 
-  blockquote,
-  pre {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-  /*
+      blockquote,
+      pre {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+      }
+      /*
      * Printing Tables:
      * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
      */
-  thead {
-    display: table-header-group;
-  }
+      thead {
+        display: table-header-group;
+      }
 
-  img,
-  tr {
-    page-break-inside: avoid;
-  }
+      img,
+      tr {
+        page-break-inside: avoid;
+      }
 
-  h2,
-  h3,
-  p {
-    orphans: 3;
-    widows: 3;
-  }
+      h2,
+      h3,
+      p {
+        orphans: 3;
+        widows: 3;
+      }
 
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
-}
+      h2,
+      h3 {
+        page-break-after: avoid;
+      }
+    }
