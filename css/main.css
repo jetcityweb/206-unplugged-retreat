@@ -216,6 +216,7 @@ footer .contact {
 
 footer .social {
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
   width: 100%;
@@ -228,8 +229,24 @@ footer h3 {
   width: 100%;
 }
 
-footer .social p {
+footer .social-icons {
   display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.social-icons i {
+  font-size: 1.5em;
+}
+
+footer .social p {
+  background-color: #527158;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  display: flex;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
 }
@@ -683,6 +700,9 @@ input[type=button] {
   footer .social {
     width: 50%;
   }
+  
+  footer .social-icons {
+    width: 200px;
   /* ---------------------------FAQ page----------------- */
   .faq h1 {
     width: 100%;
@@ -732,6 +752,7 @@ input[type=button] {
   
   .map figure {
     padding-bottom: 46%;
+  }
   
 /* Contact section */
 
@@ -810,6 +831,9 @@ input[type=button] {
   .features .features-items {
     width: 33%;
   }
+  
+  /* Footer */
+  
   /* -------------------------FAQ Page----------------------------- */
   .faq h2 {
     width: 100%;
@@ -818,8 +842,8 @@ input[type=button] {
 
 /* ---------------------------About Page--------------------------- */
 
-/* .map figure {
-  padding-bottom: 38%; */
+.map figure {
+  padding-bottom: 38%;
 
 /* ==========================================================================
    Print styles.
