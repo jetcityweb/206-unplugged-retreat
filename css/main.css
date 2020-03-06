@@ -321,14 +321,15 @@ aside h2 {
   align-items: center;
   flex-flow: row wrap;
   text-align: center;
-  width: 55%;
-  margin-bottom: 70px;
+  width: 70%;
+  margin-bottom: 40px;
 }
 
-.fontawesome-icon {
-  padding-top: 60px;
-  padding-bottom: 40px;
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 0;
 }
+
 /* Home Page-Reviews section */
 .reviews {
   background-color: #2a423a;
